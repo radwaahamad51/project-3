@@ -4,21 +4,22 @@ import { AuthContext } from "../provider/AuthProvider";
 
 const Navber = () => {
     const { user, logOut } = useContext(AuthContext)
-    return (<div className="navbar bg-base-100">
+    return (<div className="navbar bg-base-100 bg-cyan-200 w-full mb-10">
         <div className="navbar-start">
             <a className="btn btn-ghost text-xl"> Career Counseling</a>
         </div>
-        <div className="navbar-center">
+        <div className="navbar-center flax gap-4">
            <Link to ="/">Home</Link>
+           <Link to="/profile">Profile</Link>
         </div>
         <div className="navbar-end gap-2">
             <div className="form-control">
                 {user && user?.email ? (
-                    <button onClick={logOut} className="btn btn-neutral rounded-none">
+                    <button onClick={logOut} className="btn btn-primary ">
                         Log-Out
                     </button>
                 ) : (
-                    <Link to="/auth/login" className="btn btn-neutral rounded-none">
+                    <Link to="/auth/login" className="btn btn-primary ">
                         Login
                     </Link>
                 )}

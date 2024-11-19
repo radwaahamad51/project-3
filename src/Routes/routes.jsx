@@ -5,6 +5,7 @@ import Login from "../Page/Login";
 import Card from "../Main-Design/CardSlider";
 import Learn from "../Main-Design/LearnMore";
 import PrivateRoute from "./PrivetRouter";
+import Profile from "../componemt/profile";
 
 
 const router = createBrowserRouter([
@@ -43,6 +44,10 @@ const router = createBrowserRouter([
         path: '*',
         element: <h2>error</h2>
     },
+    {
+        path:"/profile",
+        element:<PrivateRoute><Profile></Profile></PrivateRoute>
+    }
 
 ]);
 

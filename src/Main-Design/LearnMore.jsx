@@ -4,6 +4,13 @@ import Navber from "./Navber";
 
 const Learn = () => {
     const { learData } = useContext(AuthContext);
+    if (!learData) {
+        return (
+            <div className="text-center mt-20">
+                <p className="text-gray-500">Login successful! go to home</p>
+            </div>
+        );
+    }
 
     return (
         <div >

@@ -3,6 +3,9 @@ import Box from "./card";
 
 const Card = () => {
     const { data: news } = useLoaderData();
+    if (!news || news.length === 0) {
+        return <p>Loading or no news available...</p>;
+    }
 
     return (
         <div>
@@ -46,7 +49,7 @@ const Card = () => {
             </div>
             <div className="grid grid-cols-3 gap-4 mt-8 ">
             {news.map((singleNews) => (
-               <Box singleNews={singleNews}></Box>
+               <Box key={singleNews.id} singleNews={singleNews}></Box>
             ))
 
             }

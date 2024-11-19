@@ -1,8 +1,10 @@
 import { useContext, useState } from "react";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
+import Navber from "../Main-Design/Navber";
+import { toast, ToastContainer } from "react-toastify";
 
-
+import "react-toastify/dist/ReactToastify.css";
 const Login = () => {
     
     const {userLogin, setUser} = useContext(AuthContext)
@@ -19,16 +21,24 @@ const Login = () => {
             .then((result) => {
                 const user = result.user;
                 setUser(user);
+                toast.success("Login successful!")
                 navigate(location?.state ? location.state : "/");
             })
             .catch((err) => {
                 setError({ ...error, login: err.code });
                 console.log('error')
+                toast.error("Login failed. Please check your password or email.");
             });
     };
 
     return (
-        <div className="min-h-screen flex justify-center items-center">
+       <div>
+        <ToastContainer></ToastContainer>
+        <div>
+            <Navber></Navber>
+            
+        </div>
+         <div className="min-h-screen flex justify-center items-center">
             <div className="card bg-base-100 w-full max-w-lg shrink-0 rounded-none p-10">
                 <h2 className="text-2xl font-semibold text-center">
                     Login your account
@@ -80,6 +90,8 @@ const Login = () => {
                 </p>
             </div>
         </div>
+       
+       </div>
     )
 };
 export default Login;
