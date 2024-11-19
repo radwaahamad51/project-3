@@ -1,0 +1,74 @@
+{"data":[
+    {
+        "id": 1,
+        "image": "https://i.ibb.co.com/xs9z2qC/istockphoto-1352686769-612x612.jpg",
+        "serviceName": "Career Counseling Sessions",
+        "category": "Online",
+        "description": "Personalized career guidance to help you navigate your professional journey.",
+        "pricing": "$50",
+        "duration": "2024-12-05T17:00:00Z - 2024-12-05T18:00:00Z",
+        "counselor": "Dr. Emily Johnson",
+        "rating": 4.8,
+        "buttonText": "Learn More"
+    },
+    {
+        "id": 2,
+        "image": "https://i.ibb.co.com/xJfD3c6/Reviewing-resumes-scaled.jpg",
+        "serviceName": "Resume Review",
+        "category": "Offline",
+        "description": "Get your resume reviewed by industry experts and stand out to employers.",
+        "pricing": "$30",
+        "duration": "2024-12-06T15:00:00Z - 2024-12-06T16:00:00Z",
+        "counselor": "Mr. Alex Brown",
+        "rating": 4.5,
+        "buttonText": "Learn More"
+    },
+    {
+        "id": 3,
+        "image": "https://i.ibb.co.com/KbV6yj4/images.jpg",
+        "serviceName": "Interview Preparation Workshop",
+        "category": "Group",
+        "description": "Interactive sessions to build confidence and ace your interviews.",
+        "pricing": "$75",
+        "duration": "2024-12-07T10:00:00Z - 2024-12-07T12:00:00Z",
+        "counselor": "Ms. Sarah Lee",
+        "rating": 4.9,
+        "buttonText": "Learn More"
+    },
+    {
+        "id": 4,
+        "image": "https://i.ibb.co.com/fD00ZBt/4dd94ae737b33a3ceedb65e1c336ab0b.jpg",
+        "serviceName": "Networking Strategies",
+        "category": "Online",
+        "description": "Master the art of professional networking to boost your career.",
+        "pricing": "$40",
+        "duration": "2024-12-08T16:00:00Z - 2024-12-08T17:30:00Z",
+        "counselor": "Dr. Michael Adams",
+        "rating": 4.6,
+        "buttonText": "Learn More"
+    },
+    {
+        "id": 5,
+        "image": "https://i.ibb.co.com/DYpZyT9/images-1.jpg",
+        "serviceName": "Leadership Skills Workshop",
+        "category": "Group",
+        "description": "Enhance your leadership capabilities through hands-on activities and expert insights.",
+        "pricing": "$90",
+        "duration": "2024-12-09T14:00:00Z - 2024-12-09T17:00:00Z",
+        "counselor": "Prof. Catherine Wilson",
+        "rating": 4.7,
+        "buttonText": "Learn More"
+    },
+    {
+        "id": 6,
+        "image": "https://i.ibb.co.com/XSv6Cfs/images-2.jpg",
+        "serviceName": "Time Management Masterclass",
+        "category": "Online",
+        "description": "Learn proven techniques to prioritize tasks and maximize productivity.",
+        "pricing": "$60",
+        "duration": "2024-12-10T11:00:00Z - 2024-12-10T13:00:00Z",
+        "counselor": "Ms. Olivia Harris",
+        "rating": 4.9,
+        "buttonText": "Learn More"
+    }
+]}
