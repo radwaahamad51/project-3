@@ -31,7 +31,7 @@ const Profile = () => {
             <div>
                 <Navber></Navber>
             </div>
-            <div className="w-11/12 mx-auto mt-10">
+            <div className=" mx-auto pt-10 pb-10 bg-sky-200">
                 <div className="bg-white p-6 rounded-lg shadow-md max-w-md mx-auto">
                     <h2 className="text-2xl font-bold mb-4">My Profile</h2>
                     <img

@@ -59,7 +59,7 @@ const Card = () => {
             
 
             </div>
-            <div className="grid grid-cols-3 gap-4 mt-8 mx-auto ">
+            <div className="lg:grid grid-cols-3 gap-4 mt-8 mx-auto bg-emerald-100 pt-10 pb-10 ">
                 {news.map((singleNews) => (
                     <Box key={singleNews.id} singleNews={singleNews}></Box>
                 ))
