@@ -1,5 +1,12 @@
 import { useLoaderData } from "react-router-dom";
 import Box from "./card";
+import { useState } from "react";
+
+
+
+
+// import Sli from "./slaider";
+
 
 const Card = () => {
     const { data: news } = useLoaderData();
@@ -7,9 +14,10 @@ const Card = () => {
         return <p>Loading or no news available...</p>;
     }
 
+    const [controlledSwiper, setControlledSwiper] = useState(null);
     return (
         <div>
-            <div className="carousel w-full">
+            <div className="carousel w-full mx-auto ">
                 <div id="slide1" className="carousel-item relative w-full">
                     <img
                         src="https://img.daisyui.com/images/stock/photo-1625726411847-8cbb60cc71e6.webp"
@@ -47,12 +55,16 @@ const Card = () => {
                     </div>
                 </div>
             </div>
-            <div className="grid grid-cols-3 gap-4 mt-8 ">
-            {news.map((singleNews) => (
-               <Box key={singleNews.id} singleNews={singleNews}></Box>
-            ))
+            <div>
+            
 
-            }
+            </div>
+            <div className="grid grid-cols-3 gap-4 mt-8 mx-auto ">
+                {news.map((singleNews) => (
+                    <Box key={singleNews.id} singleNews={singleNews}></Box>
+                ))
+
+                }
             </div>
 
         </div>

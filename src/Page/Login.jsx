@@ -5,6 +5,7 @@ import Navber from "../Main-Design/Navber";
 import { toast, ToastContainer } from "react-toastify";
 
 import "react-toastify/dist/ReactToastify.css";
+import Footer from "../Main-Design/footer";
 const Login = () => {
     
     const {userLogin, setUser} = useContext(AuthContext)
@@ -90,7 +91,10 @@ const Login = () => {
                 </p>
             </div>
         </div>
-       
+       <div className="bg-cover bg-center bg-no-repeat h-64"
+           style={{ backgroundImage: "url('https://i.ibb.co.com/yWQDsSz/footer-bg-e36870be2a883.jpg')" }}>
+        <Footer></Footer>
+       </div>
        </div>
     )
 };

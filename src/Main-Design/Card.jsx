@@ -9,7 +9,7 @@ const Box = ({ singleNews }) => {
     
 
     return (
-        <div className="grid grid-cols-1 gap-4 card w-80 bg-base-100 shadow-xl hover:shadow-2xl transition-shadow">
+        <div className="bg-lime-100 grid grid-cols-1 gap-4 card w-80 bg-base-100 shadow-xl hover:shadow-2xl transition-shadow mx-auto">
             <figure>
                 <img src={singleNews.image} alt="" className="w-full h-48 object-cover" />
             </figure>

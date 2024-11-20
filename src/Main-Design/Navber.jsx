@@ -9,8 +9,8 @@ const Navber = () => {
             <a className="btn btn-ghost text-xl"> Career Counseling</a>
         </div>
         <div className="navbar-center flax gap-4">
-           <Link to ="/">Home</Link>
-           <Link to="/profile">Profile</Link>
+           <Link className="text-neutral-950" to ="/">Home</Link>
+           <Link className="text-neutral-950" to="/profile">Update.Profile</Link>
         </div>
         <div className="navbar-end gap-2">
             <div className="form-control">
