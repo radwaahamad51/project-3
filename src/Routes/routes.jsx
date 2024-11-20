@@ -6,6 +6,10 @@ import Card from "../Main-Design/CardSlider";
 import Learn from "../Main-Design/LearnMore";
 import PrivateRoute from "./PrivetRouter";
 import Profile from "../componemt/profile";
+import Google from "../Page/google";
+import NotFoundPage from "../Page/notFound";
+
+
 
 
 const router = createBrowserRouter([
@@ -47,7 +51,16 @@ const router = createBrowserRouter([
     {
         path:"/profile",
         element:<PrivateRoute><Profile></Profile></PrivateRoute>
+    },
+    {
+        path:"/google",
+        element:<Google></Google>
+    },
+    {
+        path:"/notFound",
+        element:<NotFoundPage></NotFoundPage>
     }
+   
 
 ]);
 

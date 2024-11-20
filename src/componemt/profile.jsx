@@ -3,6 +3,7 @@ import { useContext, useState } from "react";
 import { updateProfile } from "firebase/auth";
 import { AuthContext } from "../provider/AuthProvider";
 import Navber from "../Main-Design/Navber";
+import Footer from "../Main-Design/footer";
 
 const Profile = () => {
     const { user } = useContext(AuthContext);
@@ -73,6 +74,10 @@ const Profile = () => {
                     </form>
                 </div>
             </div>
+            <div className="bg-cover bg-center bg-no-repeat h-64"
+           style={{ backgroundImage: "url('https://i.ibb.co.com/yWQDsSz/footer-bg-e36870be2a883.jpg')" }}>
+        <Footer></Footer>
+       </div>
         </div>
     );
 };

@@ -6,11 +6,15 @@ const Navber = () => {
     const { user, logOut } = useContext(AuthContext)
     return (<div className="navbar bg-base-100 bg-cyan-200 w-full mb-10">
         <div className="navbar-start">
-            <a className="btn btn-ghost text-xl"> Career Counseling</a>
+            <a className="btn btn-ghost text-xl text-blue-600 italic"> Career Counseling</a>
         </div>
         <div className="navbar-center flax gap-4">
            <Link className="text-neutral-950" to ="/">Home</Link>
            <Link className="text-neutral-950" to="/profile">Update.Profile</Link>
+           <Link className="text-neutral-950" to="/auth/register">Ragister</Link>
+           <Link className="text-neutral-950" to="/google">Google</Link>
+           <Link className="text-neutral-950" to="/notFound">View</Link>
+
         </div>
         <div className="navbar-end gap-2">
             <div className="form-control">

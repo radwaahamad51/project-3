@@ -4,11 +4,22 @@ import {
 
   createUserWithEmailAndPassword,
   getAuth,
+  
+ 
+  
+  GoogleAuthProvider,
+  
+ 
+  
   onAuthStateChanged,
   signInWithEmailAndPassword,
+  
+  signInWithPopup,
+  
   signOut,
   updateProfile,
 } from "firebase/auth";
+
 
 export const AuthContext = createContext();
 const auth = getAuth(app)
@@ -43,6 +54,23 @@ const AuthProvoder = ({ children }) => {
     return updateProfile(auth.currentUser, updatedData);
   };
 
+  const handelgogolesignin = () => {
+    const googleProvider = new GoogleAuthProvider(); // Create an instance of GoogleAuthProvider
+    setLoading(true);
+    return signInWithPopup(auth, googleProvider) // Pass the instance here
+      .then((result) => {
+        setUser(result.user);
+        console.log("Google Sign-In Successful:", result.user);
+        setLoading(false);
+      })
+      .catch((error) => {
+        console.error("Error during Google Sign-In:", error);
+        setLoading(false);
+      });
+  };
+
+ 
+
   const authInfo = {
     user,
     setUser,
@@ -52,7 +80,9 @@ const AuthProvoder = ({ children }) => {
     loading,
     updateUserProfile,
     learData,
-    handleAddBtn
+    handleAddBtn,
+    handelgogolesignin
+   
   };
   useEffect(() => {
     const unsubscribe = onAuthStateChanged(auth, (currentUser) => {
