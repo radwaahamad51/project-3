@@ -24,6 +24,7 @@ const router = createBrowserRouter([
                 element: <Card></Card>,
                 loader: ({ params }) =>
                     fetch("\shearData.json")
+               
 
             },
 

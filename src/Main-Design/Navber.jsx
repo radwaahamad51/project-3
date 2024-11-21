@@ -1,12 +1,12 @@
 import { useContext } from "react";
 import { Link } from "react-router-dom";
 import { AuthContext } from "../provider/AuthProvider";
-import { IoReorderThree } from "react-icons/io5";
+
 import { PiDotsThreeOutlineVerticalDuotone } from "react-icons/pi";
 
 const Navber = () => {
     const { user, logOut } = useContext(AuthContext)
-    return (<div className="navbar bg-base-100 bg-cyan-200 w-full mb-10 fixed top-0 left-0 z-50 mt-100 ">
+    return (<div className="navbar bg-base-100 bg-cyan-200 w-full mb-10 fixed top-0 left-0 z-50  ">
          <details className="dropdown lg:hidden">
             <summary className="btn btn-ghost"><PiDotsThreeOutlineVerticalDuotone></PiDotsThreeOutlineVerticalDuotone></summary>
             <ul className="menu dropdown-content bg-base-100 rounded-box z-[1] w-52 p-2 shadow">
